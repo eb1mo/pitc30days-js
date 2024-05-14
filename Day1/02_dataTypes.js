@@ -19,3 +19,4 @@ let isLoggedIn = true;
 console.log(typeof "Ram"); //  find datatype of a variable
 console.log(typeof null); // object datatype
 console.log(typeof undefined); // undefined datatype
+

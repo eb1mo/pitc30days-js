@@ -2,19 +2,19 @@
 
 // object literals
 
-const mySym = Symbol("key1");
+// const mySym = Symbol("key1");
 
-const JsUser = {
-  name: "bimo",
-  "full name": "bimo poudel", // these types of values cant be accessed by using object .
-  // mySym: "mykey1",
-  [mySym]: "mykey1",
-  age: 21,
-  location: "ktm",
-  email: "bimo@bimo",
-  isLoggedIn: true,
-  lastLoginDays: ["Monday", "Saturday"],
-};
+// const JsUser = {
+//   name: "bimo",
+//   "full name": "bimo poudel", // these types of values cant be accessed by using object .
+//   // mySym: "mykey1",
+//   [mySym]: "mykey1",
+//   age: 21,
+//   location: "ktm",
+//   email: "bimo@bimo",
+//   isLoggedIn: true,
+//   lastLoginDays: ["Monday", "Saturday"],
+// };
 
 // console.log(JsUser.email); //method 1
 

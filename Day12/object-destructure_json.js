@@ -1,14 +1,14 @@
-// const course = {
-//     name: "javascript",
-//     price: 99,
-//     instructor: "hitesh"
-// }
+const course = {
+    name: "javascript",
+    price: 99,
+    instructor: "hitesh"
+}
 
-// // console.log(course.name);
+// console.log(course.name);
 
-// const {instructor: inst} = course // another way of accessing object properties
-// // console.log(instructor);
-// console.log(inst);
+const {instructor: inst} = course // another way of accessing object properties
+// console.log(instructor);
+console.log(inst);
 
 /* json */
 //json format eg

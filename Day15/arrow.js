@@ -40,9 +40,9 @@
 
 // two();
 
-// const sum = (num1, num2) => {
-//     return num1 + num2;
-// }
+const sum = (num1, num2) => {
+    return num1 + num2;
+}
 
 // const sum = (num1, num2) => num1 + num2; // implicite return
 
@@ -52,7 +52,7 @@
 
 // const sum = (num1, num2) => ({username: "Bimo"});
 
-// console.log(sum(1, 2));
+console.log(sum(1, 2));
 
 // const Arr = [1,2,3,4];
 // Arr.forEach(()=>{})

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+        .bg-black {
+            background-color: #0d1117;
+            color: #7ee787;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <div>
+        <!-- <h1 id="title" class="heading"><span>Interesting</span> DOM learning </h1>
+      <p>Lorem ipsum dolor sit amet.</p> -->
+        <h1 id="title" class="heading">
+            <span style="display: none">Interesting</span> DOM learning
+        </h1>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+        <h2>Lorem, ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="" />
+
+        <ul>
+            <li class="list-item">a</li>
+            <li class="list-item">b</li>
+            <li class="list-item">c</li>
+            <li class="list-item">d</li>
+        </ul>
+    </div>
+
+    <script>
+        /*
+          const dom1 = document.getElementById('title');
+          alert(dom1);
+          const dom2 = document.getElementById('title').id;
+          alert(dom2);
+          const dom3 = document.getElementById('title').className;
+          alert(dom3);
+          const dom4 = document.getElementById('title').getAttribute('id');
+          alert(dom4);
+          */
+        /*
+          const dom5 = document.getElementById('title').setAttribute('class', 'heading from-domm');
+          alert(dom5);
+          */
+
+        /* Styles using DOMM
+      const dom6 = document.getElementById('title');
+      dom6.style.backgroundColor='#2a2d2e';
+      dom6.style.padding='24px';
+      */
+        /*
+      const dom7 = document.getElementById('title');
+      alert(`textContent: ${dom7.textContent}`); // gives all texts
+      alert(`innerHTML: ${dom7.innerHTML}`); // gives html as well
+      alert(`innerText: ${dom7.innerText}`); // gives only visible texts
+      */
+
+        /*
+        // Query Selectors
+        alert(document.querySelector('h2'));
+        alert(document.querySelector('#title'));
+        alert(document.querySelector('.heading'));
+        alert(document.querySelector('input[type="password"]'));
+        
+        const dom8 = document.querySelector('ul');
+        alert(dom8.querySelector('li'));
+        */
+
+        /*
+        // Query Selector All
+    
+        const tempLi = document.querySelectorAll('ul');
+        tempLi[0].style.color ='white';
+        tempLi[0].style.padding='24px';
+        
+    
+        const tempLiList = document.querySelectorAll('ul');
+        tempLiList.forEach( (l)=>{
+        l.style.backgroundColor='blue';
+        })
+    */
+
+        /* 
+        // by className
+        
+        
+        const tempClassList = document.getElementsByClassName('list-item');
+        const myArr = Array.from(tempClassList);
+        myArr.forEach( (l)=>{
+            l.style.backgroundColor='blue';
+            })
+        */
+
+    </script>
+</body>
+
+</html>

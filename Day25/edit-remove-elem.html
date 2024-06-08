@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+        .bg-black {
+            background-color: #0d1117;
+            color: #7ee787;
+        }
+    </style>
+</head>
+
+<body class="bg-black">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+
+</body>
+<script>
+/* Adding Element 
+function addLang (newLang) {
+const li = document.createElement('li');
+li.innerHTML=`${newLang}`;
+document.querySelector('.language').appendChild(li);
+}
+addLang("Python");
+*/
+
+/* Adding Element - Optimized way */
+function addLangO (newLang) {
+    const li = document.createElement('li');
+    li.appendChild(document.createTextNode(newLang));
+    document.querySelector('.language').appendChild(li);
+}
+addLangO("TypeScript");
+
+
+/* Editing element */
+const secLang = document.querySelector("li:nth-child(2)");
+const li = document.createElement('li');
+li.textContent = "Rust";
+secLang.replaceWith(li);
+
+const firstLang = document.querySelector('li:nth-child(1)');
+firstLang.outerHTML = "<li> Ruby </li>"
+
+
+/* Removing element */
+
+const lastLang = document.querySelector('li:last-child');
+lastLang.remove();
+
+</script>
+
+</html>

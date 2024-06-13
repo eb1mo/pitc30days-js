@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form validation in Js</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h3>Sign Up - Form Validation</h3>
+    <form>
+
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Name" /> <span class="error"></span>
+        <br /><br />
+
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" /> <span class="error"></span>
+        <br /><br /> 
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" placeholder="Phone" /> <span class="error"></span>
+        <br /><br />
+
+        <label for="phone">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Email" /> <span class="error"></span>
+        <br /><br />
+
+        <label for="pass">Password:</label>
+        <input type="text" id="pass" name="pass" placeholder="Password" /> <span class="error"></span>
+        <br /><br />
+
+        <label for="cpass">Confirm Password:</label>
+        <input type="text" id="cpass" name="cpass" placeholder="Password" /> <span class="error"></span>
+        <br /><br />
+
+        <label for="gender">Gender: </label> <span class="error"></span> <br /> 
+        <input type="radio" name="gender" value="Male" /> Male
+        <input type="radio" name="gender" value="Female" /> Female
+        <input type="radio" name="gender" value="Others" /> Others <br /><br />
+
+        <label for="os">Preferred OS:</label>  <span class="error"></span> <br>
+        <select name="os"> 
+            <option selected disabled>Choose an OS</option>
+            <option value="macos">MacOS</option>
+            <option value="windows">Windows</option>
+            <option value="linux">Linux</option>
+        </select>
+        <br /><br />
+
+        <input type="checkbox" id="agree" name="agree" value="agree" /> 
+        <label for="agree">Agree with the T&C?</label> <span class="error"></span> <br /><br />
+
+
+        <label for="sign">Signature: </label>
+        <input type="file" id="sign" name="sign" /> <span class="error"></span>
+        <br /><br />
+
+        <button type="submit" id="submit">Submit</button>
+        <button type="reset" id="reset">Reset Form</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
